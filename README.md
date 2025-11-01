@@ -24,6 +24,9 @@ sitemap = append(sitemap, &sitemaps.URL{
   Frequency: sitemaps.Weekly,
   Priority:  sitemaps.Low,
 })
+
+// w is io.Writer (e.g. http.ResponseWriter)
+_ = sitemap.Write(w)
 ```
 
 ### License
