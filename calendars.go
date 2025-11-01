@@ -4,6 +4,7 @@
 package sitemaps
 
 import (
+	"fmt"
 	"time"
 )
 
@@ -11,6 +12,10 @@ type CalendarDay struct {
 	Year  int
 	Month int
 	Day   int
+}
+
+func (cd CalendarDay) ISO() string {
+	return fmt.Sprintf("%d-%02d-%02d", cd.Year, cd.Month, cd.Day)
 }
 
 func DayFrom(t time.Time) CalendarDay {
