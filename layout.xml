@@ -3,7 +3,7 @@
   {{- range .}}
     <url>
       <loc>{{.Location}}</loc>
-      <lastmod>{{.Modified.DayISO}}</lastmod>
+      <lastmod>{{.Modified.ISO}}</lastmod>
       <changefreq>{{.Frequency}}</changefreq>
       <priority>{{.Priority}}</priority>
     </url>
