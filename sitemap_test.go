@@ -40,5 +40,5 @@ func TestEncodeUnix(t *testing.T) {
 	result := EncodeUnix(1750036057)
 	must.Eq(t, 2025, result.Year)
 	must.Eq(t, 6, result.Month)
-	must.Eq(t, 15, result.Day)
+	must.Eq(t, 16, result.Day)
 }

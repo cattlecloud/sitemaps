@@ -48,6 +48,6 @@ func EncodeLocation(original string) string {
 }
 
 func EncodeUnix(unix int64) CalendarDay {
-	t := time.Unix(unix, 0)
+	t := time.Unix(unix, 0).In(time.UTC)
 	return DayFrom(t)
 }

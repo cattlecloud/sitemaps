@@ -3,7 +3,9 @@
 
 package sitemaps
 
-import "time"
+import (
+	"time"
+)
 
 type CalendarDay struct {
 	Year  int
