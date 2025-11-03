@@ -1,6 +1,6 @@
 module cattlecloud.net/go/sitemaps
 
-go 1.25.3
+go 1.25
 
 require github.com/shoenig/test v1.12.2
 
