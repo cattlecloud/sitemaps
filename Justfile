@@ -29,14 +29,6 @@ test unit:
 [group('build')]
 init:
     go install github.com/golangci/golangci-lint/v2/cmd/golangci-lint@v2.6.0
-    go install github.com/hashicorp/copywrite@v0.22.0
-
-# ensure copywrite headers present on source files
-[group('lint')]
-copywrite:
-    $GOBIN/copywrite \
-        --config {{scripts}}/copywrite.hcl headers \
-        --spdx "BSD-3-Clause"
 
 # apply go vet command on source tree
 [group('lint')]
