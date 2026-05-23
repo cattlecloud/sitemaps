@@ -2,7 +2,6 @@ set shell := ["bash", "-u", "-c"]
 
 export scripts := ".github/workflows/scripts"
 export GOBIN := `echo $PWD/.bin`
-export GOTOOLCHAIN := 'go1.25.3'
 
 # show available commands
 [private]
@@ -28,7 +27,7 @@ test unit:
 # locally install build dependencies
 [group('build')]
 init:
-    go install github.com/golangci/golangci-lint/v2/cmd/golangci-lint@v2.6.0
+    go install github.com/golangci/golangci-lint/v2/cmd/golangci-lint@v2.11.4
 
 # apply go vet command on source tree
 [group('lint')]
